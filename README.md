@@ -1,25 +1,19 @@
-# Gold ETF Portfolio Risk Analysis: A Monte Carlo Simulation
+# 黄金ETF投资组合风险模拟
 
-## Project Overview
-This project simulates the potential future value of a portfolio containing three Gold ETFs (GLD, IAU, SGOL) using Monte Carlo methods. The goal is to quantify key market risk metrics such as **Value at Risk (VaR)** and **Expected Shortfall**.
+## 项目简介
+这是一个使用Python进行黄金ETF投资组合风险分析的蒙特卡洛模拟项目。
 
-## Key Outputs & Findings
-- **Monte Carlo Simulation**: Generated 5,000 possible future price paths over a 1-year horizon.
-- **Risk Metrics**: Calculated 95% VaR and other statistics to assess downside risk.
-- **Visualization**: Created comprehensive charts showing price paths, outcome distributions, and historical performance.
+## 功能特点
+- 下载或模拟黄金ETF历史数据
+- 计算收益率和波动率
+- 蒙特卡洛模拟未来价格路径
+- 计算风险价值(VaR)和条件在险价值(CVaR)
+- 生成可视化分析图表
 
-![Simulation Results](gold_etf_simulation_results.png)
+## 使用方法
+1. 安装依赖：`pip install pandas numpy matplotlib`
+2. 运行脚本：`python gold_etf_simulation.py`
 
-## How to Reproduce
-1. Clone this repository.
-2. Ensure you have Python installed with libraries: `yfinance`, `pandas`, `numpy`, `matplotlib`.
-3. Open and run the `Monte_Carlo_Simulation.ipynb` Jupyter notebook.
-
-## Technologies Used
-- Python
-- Jupyter Notebook
-- Libraries: Pandas, NumPy, yfinance, Matplotlib
-
-## Author
-[Liladu] – [[其他联系方式，如LinkedIn](https://www.linkedin.com/in/liladu/)]
-*Project developed for self-learning in quantitative finance and risk modeling.*
+## 输出
+- 控制台显示数据统计和风险指标
+- 4个可视化图表展示分析结果
